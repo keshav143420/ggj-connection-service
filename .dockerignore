@@ -1,10 +1,5 @@
 node_modules
 dist
 .env
-Dockerfile
-.dockerignore
-npm-debug.log
-.git
-.gitignore
-README.md
-coverage
+tests
+jest.config.js
