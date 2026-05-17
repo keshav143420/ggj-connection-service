@@ -1,1 +1,0 @@
-# ggj-connection-service
