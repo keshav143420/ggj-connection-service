@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ggj-connection-service
+  labels:
+    app: ggj-connection-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ggj-connection-service
+  template:
+    metadata:
+      labels:
+        app: ggj-connection-service
+    spec:
+      containers:
+      - name: ggj-connection-service
+        image: ggj-connection-service
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
